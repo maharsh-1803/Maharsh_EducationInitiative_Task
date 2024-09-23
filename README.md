@@ -69,5 +69,5 @@ This system demonstrates the Strategy Design Pattern with a Singleton for managi
       Dynamically executes the selected strategy’s pay method.
 4.	PaymentApp: The main class where users can choose a payment method via console input, set the appropriate strategy, and process a payment.
 
-Smart Office Room Booking System
+Smart Office Room Booking System :
 This Smart Office Management system allows users to configure multiple meeting rooms, book or cancel bookings, manage room occupancy, and track usage statistics. The OfficeConfiguration class implements the Singleton pattern to manage the list of rooms. Each Room tracks its booking status, occupancy, and usage statistics like total occupancy time and the number of times used. The Command pattern is used for room booking and cancellation, with RoomBookingCommand and RoomCancellationCommand classes executing these actions. Observers like Light and AirConditioner automatically update room statuses, turning on or off based on occupancy changes. The system also provides a MainMenu to interact with users for booking, occupancy management, and usage statistics display.
