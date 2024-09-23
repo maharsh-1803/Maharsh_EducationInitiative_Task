@@ -1,4 +1,4 @@
-Shape Drawing Application 
+Shape Drawing Application:
 This application uses the Factory Method pattern to dynamically create and draw shapes based on user input (Circle or Square).
 1.	Shape:
       An interface that defines the draw() method.
@@ -13,7 +13,7 @@ This application uses the Factory Method pattern to dynamically create and draw 
 5.	ShapeDrawingMain:
       Client class that takes user input to create and draw the selected shape.
 
-GUI Framework 
+GUI Framework :
 
 The GUI Framework application supports two themes: Light and Dark. Using the Abstract Factory pattern, it dynamically generates different UI components (Buttons and TextBoxes) depending on the selected theme.
 1.	GUIFactory:
@@ -30,14 +30,14 @@ The GUI Framework application supports two themes: Light and Dark. Using the Abs
 5.	GUIApplication:
       Client class that prompts the user to select a theme and renders the corresponding components dynamically.
 
-Database Integration System
+Database Integration System :
 The Database Integration System uses the Adapter Pattern to adapt different database APIs to a standard interface, ensuring compatibility with a modern system.
   •	DatabaseClient: The client that interacts with the database, unaware of underlying implementation differences.
   •	DatabaseAdapter: Interface that standardizes database operations like connect, query, and disconnect.
   •	LegacyDatabaseAdapter and ModernDatabaseAdapter: Concrete implementations of the adapter, wrapping legacy and modern database APIs to conform to the standard interface.
   •	DatabaseApp: Main class that allows integration of different databases dynamically by using appropriate adapters.  
   
-Notification System
+Notification System :
 The Notification System uses the Bridge Pattern to decouple the abstraction (notification types) from their implementation (sending mechanism). This allows for flexible configuration of different notification channels (Email, SMS) and sender methods at runtime.
   •	Notification: Abstract class that defines a notification type and holds a reference to NotificationSender.
   •	EmailNotification and SMSNotification: Concrete implementations of Notification, specifying how each type sends messages.
@@ -45,7 +45,7 @@ The Notification System uses the Bridge Pattern to decouple the abstraction (not
   •	EmailSender and SMSSender: Concrete implementations of NotificationSender that define how notifications are delivered.
   •	NotificationApp: Main class that dynamically selects the notification type and sender based on user input.
 
-Weather Monitoring System 
+Weather Monitoring System :
 This system uses the Observer Design Pattern to implement a weather monitoring application. Multiple display devices (observers) receive real-time weather updates from a central weather station (subject).
 1.	WeatherStation (Subject):
       Centralized class that maintains a list of observers (DisplayDevices).
@@ -60,7 +60,7 @@ This system uses the Observer Design Pattern to implement a weather monitoring a
 4.	Observer Pattern:
       The weather station (subject) notifies all registered observers when weather data changes, ensuring each display device is always in sync with the latest weather conditions.
 
-Payment Processing System 
+Payment Processing System :
 This system demonstrates the Strategy Design Pattern with a Singleton for managing different payment methods in an e-commerce application. It supports dynamic selection of payment strategies (Credit Card, PayPal, Bitcoin) at runtime.
 1.	PaymentStrategy: Interface that defines a common method pay(double amount) for all payment methods.
 2.	CreditCardPayment, PayPalPayment, BitcoinPayment: Concrete classes implementing the PaymentStrategy interface. Each defines a specific payment behavior.
